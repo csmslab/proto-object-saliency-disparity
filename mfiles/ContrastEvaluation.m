@@ -17,6 +17,7 @@ end
 
 c=mod(columns,blockSize);
 if c ~= 0
+    I1_temp=I1(:,1:columns-c);
     I2_temp=I2(:,1:columns-c);
     [~,columns]=size(I1_temp);
     I1=I1_temp;
